@@ -12,28 +12,28 @@
       <nav>
         <!-- Main Menu -->
         <ul class="main-menu">
-          <li>
-            <p class="main-menu-labels">Products</p>
+          <li onmouseleave="hideSubMenu('products-sub-menu')">
+            <p class="main-menu-labels" onmouseover="displaySubMenu('products-sub-menu')">Products</p>
             <!-- Products Sub Menu -->
-            <ul class="sub-menu">
+            <ul class="sub-menu hide-submenu" id="products-sub-menu">
               <li>Shampoo</li>
               <li>Conditioner</li>
               <li>Styling Gels</li>
             </ul>
           </li>
-          <li>
-            <p class="main-menu-labels">Services</p>
+          <li onmouseleave="hideSubMenu('services-sub-menu')">
+            <p class="main-menu-labels" onmouseover="displaySubMenu('services-sub-menu')" >Services</p>
             <!-- Services Sub Menu -->
-            <ul class="sub-menu">
+            <ul class="sub-menu hide-submenu" id="services-sub-menu">
               <li>Haircut</li>
               <li>Hair Color</li>
               <li>Highlights</li>
             </ul>
           </li>
-          <li>
-            <p class="main-menu-labels">Company</p>
+          <li onmouseleave="hideSubMenu('company-sub-menu')">
+            <p class="main-menu-labels" onmouseover="displaySubMenu('company-sub-menu')">Company</p>
             <!-- Company Sub Menu -->
-            <ul class="sub-menu">
+            <ul class="sub-menu hide-submenu" id="company-sub-menu">
               <li>About Us</li>
               <li>Locations</li>
               <li>Contact Us</li>
